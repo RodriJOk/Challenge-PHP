@@ -17,7 +17,6 @@ function findSum($arr) {
             }
         }
     }
-    return $result;
 }
 
 print_r(findSum([1,3,4,2,7,0])); // 3 7
