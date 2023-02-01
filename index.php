@@ -7,12 +7,11 @@ Por ejemplo, para el arreglo (1,3,4,2,7,0) el resultado sería: 3 7 -->
 <?php
 
 function findSum($arr) {
-    $result = [];
+    $result = "";
     for ($i = 0; $i < count($arr); $i++) {
         for ($j = 0; $j < count($arr); $j++) {
             if ($arr[$i] + $arr[$j] == 10) {
-                $result[] = $arr[$i];
-                $result[] = $arr[$j];
+                $result = $arr[$i] . " " . $arr[$j];
                 return $result;
             }
         }
@@ -20,6 +19,6 @@ function findSum($arr) {
 }
 
 print_r(findSum([1,3,4,2,7,0])); // 3 7
-print_r(findSum([1,5,4,2,7,0])); // 5 5
+// print_r(findSum([1,5,4,2,7,0])); // 5 5
 
 ?>
